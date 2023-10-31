@@ -20,15 +20,20 @@
             </p>
         </div> <!-- ./jumbo-row -->
 
-        <div class="container form-row">
-            <form>
-                <h4>Enter First Year's Name</h4>
-                <label for="student" class="form-label">Student:</label>
-                <input type="text" class="form-control" id="student" placeholder="Marvolo Robins" required>
-                <button type="button" class="btn btn-primary">Sort</button>
-                <hr>
-            </form>    
-        </div> <!-- ./form-row -->
+        <form>
+            <h4>Enter First Year's Name</h4>
+            <div class="row container text-center form-row">
+                <div class="col-1">
+                    <label for="student" class="form-label">Student:</label>
+                </div>
+                <div class="col-11">
+                    <input type="text" class="form-control" id="student" placeholder="Marvolo Robins" required>
+                </div>
+            </div> <!-- ./form-row -->
+            <button type="button" class="col- 1 btn btn-primary">Sort</button>
+            <hr>
+        </form>
+       
 
         <h6>Filter Students</h6>
         <div class="container filter-students-row btn-group" role="group" aria-label="Filter Buttons">
