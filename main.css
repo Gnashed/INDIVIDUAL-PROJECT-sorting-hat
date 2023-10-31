@@ -1,11 +1,14 @@
 .expelled img {
     width: 250px;
-    height: 250px;
+    height: 200px;
 }
 
 .firstYears, .expelled {
     border: 2px solid black;
     height: 500px;
+    margin-top: 4em;
+    margin-bottom: 2em;
+    text-align: center;
 }
 
 .student {
@@ -15,4 +18,13 @@
     border-bottom: 1px solid black;
     border-radius: 3px;
     width: 200px;
+}
+
+form h4, h5 {
+    font-weight: bold;
+    text-align: center;
+}
+
+#house-color + p {
+    margin-top: 0.75em;
 }
