@@ -9,9 +9,10 @@
 }
 
 .student {
-    border-left: 75px solid black;
+    border-left: 70px solid black;
     border-top: 1px solid black;
     border-right: 1px solid black;
     border-bottom: 1px solid black;
-    width: 300px;
+    border-radius: 3px;
+    width: 200px;
 }
