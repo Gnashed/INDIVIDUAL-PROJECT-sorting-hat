@@ -1,0 +1,17 @@
+.expelled img {
+    width: 250px;
+    height: 250px;
+}
+
+.firstYears, .expelled {
+    border: 2px solid black;
+    height: 500px;
+}
+
+.student {
+    border-left: 75px solid black;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    width: 300px;
+}
