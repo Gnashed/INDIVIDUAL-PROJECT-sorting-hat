@@ -1,3 +1,8 @@
+body {
+    /* Mint Cream */
+    background-color: rgb(234, 242, 239);
+}
+
 /* ============================= Title, Description =============================*/
 
 h1 + p {
@@ -21,6 +26,30 @@ h5 {
     margin: 3rem 0 1rem 0;
 }
 
+/* House Filter buttons */
+#gryffindor {
+    color: white;
+    background-color: rgb(235, 5, 9);
+    border: none;
+}
+
+#hufflepuff {
+    color: black;
+    background-color: rgb(255, 216, 0);
+    border: none;
+}
+
+#ravenclaw {
+    color: white;
+    background-color: rgb(18, 34, 87);
+    border: none;
+}
+
+#slytherin {
+    color: white;
+    background-color: rgb(41, 112, 66);
+    border: none;
+}
 /* ============================= 1st Year's and Expelled =============================*/
 
 /* This is one, large div */
