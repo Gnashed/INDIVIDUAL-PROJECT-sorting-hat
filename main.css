@@ -1,3 +1,5 @@
+/* ============================= Title, Description =============================*/
+
 h1 + p {
     margin-top: 1.5rem;
 }
@@ -7,24 +9,34 @@ h1 + p {
     margin: 2rem 0 3rem 0;
 }
 
+/* ============================= Form, Filters =============================*/
+
+form h4, h5 {
+    font-weight: bold;
+    text-align: center;
+}
+
 h5 {
     /* Thinking about adding a border around .filter-students later, leave margin top at 3rem. */
     margin: 3rem 0 1rem 0;
 }
 
-.firstYears, .expelled {
-    border: 2px solid black;
-    height: 500px;
+/* ============================= 1st Year's and Expelled =============================*/
+
+/* This is one, large div */
+.firstYears-and-expelled {
     margin-top: 5em; /* Thinking about adding a border around this later, leave margin top at 5em. */
     margin-bottom: 2em;
     text-align: center;
 }
 
-.expelled img {
-    width: 250px;
-    height: 200px;
+/* The two cards */
+.firstYears, .expelled {
+    border: 2px solid black;
+    height: 500px;
 }
 
+/* Student card(s) */
 .student {
     border-left: 90px solid black;
     border-top: 1px solid black;
@@ -34,11 +46,11 @@ h5 {
     width: 250px;
 }
 
-form h4, h5 {
-    font-weight: bold;
-    text-align: center;
-}
-
 #house-color + p {
     margin-top: 0.75em;
+}
+
+.expelled img {
+    width: 250px;
+    height: 200px;
 }
