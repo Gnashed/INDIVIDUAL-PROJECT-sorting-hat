@@ -36,7 +36,7 @@ h5 {
     height: 500px;
 }
 
-.firstYears p {
+.firstYears > p {
     margin-top: 4rem;
 }
 
