@@ -54,6 +54,7 @@ h5 {
 
 /* This is one, large div */
 .firstYears-and-expelled {
+    border: 2px solid black;
     margin-top: 5em; /* Thinking about adding a border around this later, leave margin top at 5em. */
     margin-bottom: 2em;
     text-align: center;
@@ -61,8 +62,17 @@ h5 {
 
 /* The two cards */
 .firstYears, .expelled {
-    border: 2px solid black;
+    border: 1px solid gray;
+    border-radius: 4px;
     height: 500px;
+}
+
+.firstYears {
+    margin-right: 8px;
+}
+
+.expelled {
+    margin-left: 8px;
 }
 
 .firstYears > p {
