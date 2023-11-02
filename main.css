@@ -16,6 +16,11 @@ h1 + p {
 
 /* ============================= Form, Filters =============================*/
 
+.start-here-btn {
+    width: 130px;
+    height: 38px;
+}
+
 form h4, h5 {
     font-weight: bold;
     text-align: center;
