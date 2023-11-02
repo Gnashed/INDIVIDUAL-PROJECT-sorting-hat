@@ -59,10 +59,12 @@ h5 {
 
 /* This is one, large div */
 .firstYears-and-expelled {
+    justify-content: center;
     border: 2px solid black;
     margin-top: 5em; /* Thinking about adding a border around this later, leave margin top at 5em. */
     margin-bottom: 2em;
     text-align: center;
+    width: auto;
 }
 
 /* The two cards */
