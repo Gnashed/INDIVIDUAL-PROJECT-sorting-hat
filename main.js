@@ -4,9 +4,16 @@
 const Students = [
     {
         id: 1,
-        name: "Student",
+        name: "Tion Blackmon",
         house: "Ravenclaw",
-        houseColor: "Undefined",
+        houseColor: "Blue",
         isExpelled: false
     }
 ];
+
+const houses = ["Gryffindor", "Hufflepuff", "Ravenclaw", "Slytherin"];
+
+// Randomly assigns student to a house.
+const assignToHouse = (array) => {
+    // TODO:
+};
