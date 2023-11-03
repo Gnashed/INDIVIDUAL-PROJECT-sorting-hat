@@ -24,10 +24,31 @@ const assignToHouse = (student) => {
 /*
 ========================================= Form =========================================
 */
-// Add student to first year's
-const sortStudent = () => {
-    
+// Target input textbox
+const form = document.querySelector('form');
+
+// Create student and add it to first year's.
+const sortStudent = (event) => {
+    event.preventDefault();
+
+    // New Student
+    const newStudent = {
+        id: students.length + 1,
+        name: document.querySelector("#student").value,
+        house: "Placeholder", // Will figure out later.
+        houseColor: "Placeholder", // Will figure out later.
+        isExpelled: false
+    }
+
+    // Push student to the students array
+    students.push(newStudent);
+    // Render students to the DOM.
+    renderCards(students);
+    // Reset the form.
+    form.reset();
 }
+
+form.addEventListener('click', sortStudent);
 
 /*
 ========================================= Cards =========================================
@@ -63,3 +84,4 @@ Will revisit this when I'm finished building the other functions. Basically the 
 
 // Func calls
 renderCards(students);
+// sortStudent();
