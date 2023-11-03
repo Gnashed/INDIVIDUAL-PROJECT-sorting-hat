@@ -21,5 +21,28 @@ const assignToHouse = (student) => {
     // console.log(students.house);
 };
 
+/*
+========================================= Cards =========================================
+*/
+
+// Create the student cards.
+const renderCards = (array) => {
+    // Target .student
+    const student = document.querySelector(".student");
+
+    // Initialize empty string to fill up the values that will make the student cards.
+    let domString = "";
+
+    // Loop through students
+    for(let student in students) {
+        
+    }
+}
+
+/*
+========================================= main() =========================================
+Will revisit this when I'm finished building the other functions. Basically the same as startApp(). Just naming it differently.
+*/
+
 // Func calls
 assignToHouse(students[0]);
