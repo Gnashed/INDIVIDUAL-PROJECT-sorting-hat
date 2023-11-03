@@ -42,7 +42,7 @@ const renderCards = (array) => {
         </div> <!-- ./student -->
         `;
     }
-    // Target .student
+    // Target #fill-student
     const student = document.querySelector("#fill-student");
     // Render the card to the DOM.
     student.innerHTML = domString;
@@ -54,5 +54,4 @@ Will revisit this when I'm finished building the other functions. Basically the 
 */
 
 // Func calls
-assignToHouse(students[0]);
 renderCards(students);
