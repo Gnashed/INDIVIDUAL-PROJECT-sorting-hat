@@ -1,6 +1,6 @@
 body {
-    /* Mint Cream */
-    background-color: rgb(234, 242, 239);
+    background-color: #0A090C;
+    font-family: 'Kenia', 'Roboto', sans-serif;
 }
 
 /* ============================= Title, Description =============================*/
@@ -10,32 +10,62 @@ h1 + p {
 }
 
 #jumbo-row {
+    padding-top: 1.5rem;
+    color: wheat;
     text-align: center;
     margin: 2rem 0 3rem 0;
+    background-color: #2C666E;
+    border-radius: 5px;
+    width: auto;
+    height: 300px;
 }
 
 /* ============================= Form, Filters =============================*/
 
 .start-here-btn {
+    color: wheat;
     width: 130px;
     height: 38px;
-    margin: 1rem 0;
+    margin: 1rem 0 -1rem 0;
 }
 
-form h4, h5 {
+form h4, h5, form label {
     font-weight: bold;
     text-align: center;
+    color: wheat;
+}
+
+#sort-btn {
+    background-color: #d6200c;
+    border: none;
+}
+
+#sort-btn:hover {
+    background-color: #d6200c67;
+    border: none;
 }
 
 h5 {
     /* Thinking about adding a border around .filter-students later, leave margin top at 3rem. */
     margin: 3rem 0 1rem 0;
+    color: #F0EDEE;
 }
 
-/* House Filter buttons */
+/* Filter buttons */
+#allFilter:hover {
+    color: white;
+    background-color: rgb(68, 67, 67);
+}
+
 #gryffindor {
     color: white;
-    background-color: rgb(235, 5, 9);
+    background-color: rgb(255, 0, 4);
+    border: none;
+}
+
+#gryffindor:hover {
+    color: white;
+    background-color: rgb(136, 7, 9);
     border: none;
 }
 
@@ -45,9 +75,21 @@ h5 {
     border: none;
 }
 
+#hufflepuff:hover {
+    color: black;
+    background-color: rgb(194, 166, 8);
+    border: none;
+}
+
 #ravenclaw {
     color: white;
-    background-color: rgb(18, 34, 87);
+    background-color: rgb(28, 50, 124);
+    border: none;
+}
+
+#ravenclaw:hover {
+    color: white;
+    background-color: rgb(13, 26, 68);
     border: none;
 }
 
@@ -56,20 +98,31 @@ h5 {
     background-color: rgb(41, 112, 66);
     border: none;
 }
+
+#slytherin:hover {
+    color: white;
+    background-color: rgb(29, 80, 47);
+    border: none;
+}
 /* ============================= 1st Year's and Expelled =============================*/
 
 /* This is one, large div */
 .firstYears-and-expelled {
+    background-color: #07393C;
+    color: #F0EDEE;
     justify-content: center;
-    border: 2px solid black;
+    border-radius: 5px;
     margin-top: 5em; /* Thinking about adding a border around this later, leave margin top at 5em. */
     margin-bottom: 2em;
     text-align: center;
     width: auto;
+    height: 600px;
 }
 
 /* The two cards */
 .firstYears, .expelled {
+    background-color: #5FB49C;
+    color: #0A090C;
     border: 1px solid gray;
     border-radius: 4px;
     height: 500px;
