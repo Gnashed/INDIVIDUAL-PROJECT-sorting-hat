@@ -13,7 +13,11 @@ const students = [
 
 const houses = ["Gryffindor", "Hufflepuff", "Ravenclaw", "Slytherin"];
 
-// Randomly assigns student to a house.
-const assignToHouse = (array) => {
-    // TODO:
+// Produces a random number from houses array, then logs it to the console.
+const assignToHouse = (student) => {
+    let assignedHouse = Math.floor(Math.random() * houses.length);
+    console.log(assignedHouse);
 };
+
+// Func calls
+assignToHouse(students[0]);
