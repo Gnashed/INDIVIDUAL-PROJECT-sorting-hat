@@ -22,6 +22,14 @@ const assignToHouse = (student) => {
 };
 
 /*
+========================================= Form =========================================
+*/
+// Add student to first year's
+const sortStudent = () => {
+    
+}
+
+/*
 ========================================= Cards =========================================
 */
 
@@ -54,5 +62,4 @@ Will revisit this when I'm finished building the other functions. Basically the 
 */
 
 // Func calls
-assignToHouse(students[0]);
 renderCards(students);
