@@ -61,11 +61,11 @@ const sortStudent = (event) => {
 }
 
 // Produces a random number from houses array, then use the index to assign the student to a house.
-const assignToHouse = (student) => {
-    let assignedHouseIndex = Math.floor(Math.random() * houses.length);
-    students.house = houses[assignedHouseIndex];
-    // console.log(students.house);
-};
+// const assignToHouse = (student) => {
+//     let assignedHouseIndex = Math.floor(Math.random() * houses.length);
+//     students.house = houses[assignedHouseIndex];
+//     // console.log(students.house);
+// };
 
 /*
 ========================================= main() =========================================
