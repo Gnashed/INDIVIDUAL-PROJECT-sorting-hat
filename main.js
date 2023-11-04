@@ -41,11 +41,18 @@ const renderCards = (array) => {
 const sortStudent = (event) => {
     event.preventDefault();
 
+    // Randomly selects a house for the student.
+    const assignToHouse = () => {
+        let assignedHouseIndex = Math.floor(Math.random() * houses.length);
+        students.house = houses[assignedHouseIndex];
+        return students.house;
+    };
+
     // New Student
     const newStudent = {
         id: students.length + 1,
         name: document.querySelector("#student").value,
-        house: "Placeholder", // Will figure out later.
+        house: assignToHouse(),
         houseColor: "Placeholder", // Will figure out later.
         isExpelled: false
     }
@@ -59,7 +66,7 @@ const sortStudent = (event) => {
 }
 
 // Produces a random number from houses array, then use the index to assign the student to a house.
-// const assignToHouse = (student) => {
+// const assignToHouse = () => {
 //     let assignedHouseIndex = Math.floor(Math.random() * houses.length);
 //     students.house = houses[assignedHouseIndex];
 //     // console.log(students.house);
