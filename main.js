@@ -34,6 +34,29 @@ const renderCards = (array) => {
 }
 
 /*
+========================================= Filters =========================================
+*/
+// Target the filter buttons
+const allFilter = document.querySelector("#allFilter");
+const gryffindorFilter = document.querySelector("#gryffindor");
+const hufflepuffFilter = document.querySelector("#hufflepuff");
+const ravenclawFilter = document.querySelector("#ravenclaw");
+const slytherinFilter = document.querySelector("#slytherin");
+
+// Filter Students
+const filterStudents = (array, house) => {
+    // To hold the filtered students
+    let filteredStudents = [];
+
+    array.forEach(value => {
+        if (value.house === house) {
+            filteredStudents.push(value);
+        }
+    });
+    renderCards(filteredStudents);
+}
+
+/*
 ========================================= Create, Delete =========================================
 */
 
@@ -89,6 +112,22 @@ const expelStudent = () => {
 Will revisit this when I'm finished building the other functions. Basically the same as startApp(). Just naming it differently.
 */
 
-// Func calls
+// Func calls, TODO: add allFilter
+gryffindorFilter.addEventListener('click', () => {
+    filterStudents(students, "gryffindor");
+});
+
+hufflepuffFilter.addEventListener('click', () => {
+    filterStudents(students, "hufflepuff");
+});
+
+ravenclawFilter.addEventListener('click', () => {
+    filterStudents(students, "ravenclaw");
+});
+
+slytherinFilter.addEventListener('click', () => {
+    filterStudents(students, "slytherin");
+});
+
 document.querySelector('form').addEventListener('click', createStudent);
 expelStudent();
