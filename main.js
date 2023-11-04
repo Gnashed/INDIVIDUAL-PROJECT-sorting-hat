@@ -7,7 +7,7 @@ const students = [];
 const houses = ["Gryffindor", "Hufflepuff", "Ravenclaw", "Slytherin"];
 
 /*
-========================================= Cards =========================================
+========================================= Render to DOM =========================================
 */
 
 // Will render cards to the DOM.
@@ -23,7 +23,7 @@ const renderCards = (array) => {
             <div id="house-color"></div>
                 <p>${student.name}</p>
                 <p>${student.house}</p>
-                <button type="button" class="btn btn-danger mb-3">Expel</button>
+                <button type="button" class="btn btn-danger mb-3" id="expel">Expel</button>
         </div> <!-- ./student -->
         `;
     });
@@ -34,11 +34,11 @@ const renderCards = (array) => {
 }
 
 /*
-========================================= Form =========================================
+========================================= Create, Delete =========================================
 */
 
 // Create student, add student to first year's.
-const sortStudent = (event) => {
+const createStudent = (event) => {
     event.preventDefault();
 
     // Randomly selects a house for the student.
@@ -65,10 +65,30 @@ const sortStudent = (event) => {
     document.querySelector('form').reset();
 }
 
+// Expels (delete) student from DOM, sends them to HWMNBN's Army
+const expelStudent = () => {
+    // Expelled Army Array
+    const expelledArmy = [];
+
+    // Target student card
+    const student = document.querySelector("#fill-student");
+
+    // Capture click
+    student.addEventListener('click', (event) => {
+        if (event.target.id.includes("expel")) {
+            const [, id] = event.target.id.split("--");
+            const index = students.findIndex(event => event.id === Number(id));
+            students.splice(index, 1);
+            renderCards(students);
+        }
+    })
+};
+
 /*
 ========================================= main() =========================================
 Will revisit this when I'm finished building the other functions. Basically the same as startApp(). Just naming it differently.
 */
 
 // Func calls
-document.querySelector('form').addEventListener('click', sortStudent);
+document.querySelector('form').addEventListener('click', createStudent);
+expelStudent();
