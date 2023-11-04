@@ -16,17 +16,17 @@ const renderCards = (array) => {
     let domString = "";
 
     // Loop through students
-    for(let value in array) {
+    array.forEach(student => {
         // Store HTML to domString
         domString += `
         <div class="student container">
             <div id="house-color"></div>
-                <p>${value.name}</p>
-                <p>${value.house}</p>
+                <p>${student.name}</p>
+                <p>${student.house}</p>
                 <button type="button" class="btn btn-danger mb-3">Expel</button>
         </div> <!-- ./student -->
         `;
-    }
+    });
     // Target .student
     const student = document.querySelector("#fill-student");
     // Render the card to the DOM.
@@ -36,8 +36,6 @@ const renderCards = (array) => {
 /*
 ========================================= Form =========================================
 */
-// Target form
-const form = document.querySelector('form');
 
 // Create student, add student to first year's.
 const sortStudent = (event) => {
@@ -57,7 +55,7 @@ const sortStudent = (event) => {
     // Render students to the DOM.
     renderCards(students);
     // Reset the form.
-    form.reset();
+    document.querySelector('form').reset();
 }
 
 // Produces a random number from houses array, then use the index to assign the student to a house.
@@ -73,4 +71,4 @@ Will revisit this when I'm finished building the other functions. Basically the 
 */
 
 // Func calls
-form.addEventListener('click', sortStudent);
+document.querySelector('form').addEventListener('click', sortStudent);
