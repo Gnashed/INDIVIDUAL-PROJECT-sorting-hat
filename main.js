@@ -1,15 +1,7 @@
 /*
 ========================================= Arrays =========================================
 */
-const students = [
-    {
-        id: 1,
-        name: "Student Name",
-        house: "House Name",
-        houseColor: "House Color",
-        isExpelled: false
-    }
-];
+const students = [];
 
 // Might need to move this array into a function later...
 const houses = ["Gryffindor", "Hufflepuff", "Ravenclaw", "Slytherin"];
@@ -18,7 +10,7 @@ const houses = ["Gryffindor", "Hufflepuff", "Ravenclaw", "Slytherin"];
 ========================================= Cards =========================================
 */
 
-// Create the student cards.
+// Will render cards to the DOM.
 const renderCards = (array) => {
     // Initialize empty string to fill up the values that will make the student cards.
     let domString = "";
@@ -47,7 +39,7 @@ const renderCards = (array) => {
 // Target form
 const form = document.querySelector('form');
 
-// Create student and add it to first year's.
+// Create student, add student to first year's.
 const sortStudent = (event) => {
     event.preventDefault();
 
