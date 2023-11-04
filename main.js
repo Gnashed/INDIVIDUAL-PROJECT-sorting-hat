@@ -105,6 +105,9 @@ const expelStudent = () => {
             renderCards(students);
         }
     })
+    // TODO: Figure out how to push student to expelled army array
+    console.log(expelStudent);
+    console.log(expelledArmy);
 };
 
 /*
