@@ -112,7 +112,10 @@ const expelStudent = () => {
 Will revisit this when I'm finished building the other functions. Basically the same as startApp(). Just naming it differently.
 */
 
-// Func calls, TODO: add allFilter
+// Func calls
+allFilter.addEventListener('click', () => {
+    renderCards(students);
+});
 gryffindorFilter.addEventListener('click', () => {
     filterStudents(students, "Gryffindor");
 });
