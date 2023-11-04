@@ -116,7 +116,7 @@ h5 {
     margin-bottom: 2em;
     text-align: center;
     width: auto;
-    height: 600px;
+    height: auto;
 }
 
 /* The two cards */
@@ -125,7 +125,7 @@ h5 {
     color: #0A090C;
     border: 1px solid gray;
     border-radius: 4px;
-    height: 500px;
+    height: auto;
 }
 
 .firstYears {
