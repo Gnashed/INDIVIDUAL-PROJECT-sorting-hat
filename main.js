@@ -114,19 +114,19 @@ Will revisit this when I'm finished building the other functions. Basically the 
 
 // Func calls, TODO: add allFilter
 gryffindorFilter.addEventListener('click', () => {
-    filterStudents(students, "gryffindor");
+    filterStudents(students, "Gryffindor");
 });
 
 hufflepuffFilter.addEventListener('click', () => {
-    filterStudents(students, "hufflepuff");
+    filterStudents(students, "Hufflepuff");
 });
 
 ravenclawFilter.addEventListener('click', () => {
-    filterStudents(students, "ravenclaw");
+    filterStudents(students, "Ravenclaw");
 });
 
 slytherinFilter.addEventListener('click', () => {
-    filterStudents(students, "slytherin");
+    filterStudents(students, "Slytherin");
 });
 
 document.querySelector('form').addEventListener('click', createStudent);
