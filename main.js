@@ -112,28 +112,57 @@ const expelStudent = () => {
 
 /*
 ========================================= main() =========================================
-Will revisit this when I'm finished building the other functions. Basically the same as startApp(). Just naming it differently.
 */
 
+const main = () => {
+    // Func calls
+    allFilter.addEventListener('click', () => {
+        renderCards(students);
+    });
+    gryffindorFilter.addEventListener('click', () => {
+        filterStudents(students, "Gryffindor");
+    });
+
+    hufflepuffFilter.addEventListener('click', () => {
+        filterStudents(students, "Hufflepuff");
+    });
+
+    ravenclawFilter.addEventListener('click', () => {
+        filterStudents(students, "Ravenclaw");
+    });
+
+    slytherinFilter.addEventListener('click', () => {
+        filterStudents(students, "Slytherin");
+    });
+
+    document.querySelector('#sort-btn').addEventListener('click', createStudent);
+    expelStudent();
+};
+
+main();
+
+/*
+============================== Zombie Code, will remove later... ==============================
 // Func calls
-allFilter.addEventListener('click', () => {
-    renderCards(students);
-});
-gryffindorFilter.addEventListener('click', () => {
-    filterStudents(students, "Gryffindor");
-});
+// allFilter.addEventListener('click', () => {
+//     renderCards(students);
+// });
+// gryffindorFilter.addEventListener('click', () => {
+//     filterStudents(students, "Gryffindor");
+// });
 
-hufflepuffFilter.addEventListener('click', () => {
-    filterStudents(students, "Hufflepuff");
-});
+// hufflepuffFilter.addEventListener('click', () => {
+//     filterStudents(students, "Hufflepuff");
+// });
 
-ravenclawFilter.addEventListener('click', () => {
-    filterStudents(students, "Ravenclaw");
-});
+// ravenclawFilter.addEventListener('click', () => {
+//     filterStudents(students, "Ravenclaw");
+// });
 
-slytherinFilter.addEventListener('click', () => {
-    filterStudents(students, "Slytherin");
-});
+// slytherinFilter.addEventListener('click', () => {
+//     filterStudents(students, "Slytherin");
+// });
 
-document.querySelector('#sort-btn').addEventListener('click', createStudent);
-expelStudent();
+// document.querySelector('#sort-btn').addEventListener('click', createStudent);
+// expelStudent();
+*/
