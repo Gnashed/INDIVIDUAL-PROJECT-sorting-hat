@@ -135,5 +135,5 @@ slytherinFilter.addEventListener('click', () => {
     filterStudents(students, "Slytherin");
 });
 
-document.querySelector('form').addEventListener('click', createStudent);
+document.querySelector('#sort-btn').addEventListener('click', createStudent);
 expelStudent();
