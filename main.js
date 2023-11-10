@@ -139,30 +139,5 @@ const main = () => {
     expelStudent();
 };
 
+// Start app
 main();
-
-/*
-============================== Zombie Code, will remove later... ==============================
-// Func calls
-// allFilter.addEventListener('click', () => {
-//     renderCards(students);
-// });
-// gryffindorFilter.addEventListener('click', () => {
-//     filterStudents(students, "Gryffindor");
-// });
-
-// hufflepuffFilter.addEventListener('click', () => {
-//     filterStudents(students, "Hufflepuff");
-// });
-
-// ravenclawFilter.addEventListener('click', () => {
-//     filterStudents(students, "Ravenclaw");
-// });
-
-// slytherinFilter.addEventListener('click', () => {
-//     filterStudents(students, "Slytherin");
-// });
-
-// document.querySelector('#sort-btn').addEventListener('click', createStudent);
-// expelStudent();
-*/
