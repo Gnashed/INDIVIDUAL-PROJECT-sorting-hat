@@ -123,6 +123,7 @@ const expelStudent = () => {
             const index = students.findIndex(event => event.id === Number(id));
             let expelledStudent = students.splice(index, 1);
             expelledArmy.push(expelledStudent);
+            // console.log(expelledStudent);
             renderCards(students);
             renderExpelledArmy(expelledArmy);
         }
