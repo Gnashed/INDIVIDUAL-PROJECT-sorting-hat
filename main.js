@@ -33,6 +33,26 @@ const renderCards = (array) => {
     student.innerHTML = domString;
 }
 
+// Renders dark army to DOM
+const renderExpelledArmy = (array) => {
+    // Initialize empty string to fill up the values that will make the expelled army card.
+    let domString = "";
+
+    // Loop through array
+    array.forEach(student => {
+        // Store HTML to domString
+        domString += `
+        <p>He Who Must Not Be Named's Army</p>
+        <img src="assets/expelled-unsplash.jpg" alt="scary hand placed behind a glossy window.">
+        <p>Sadly, ${student.name} went over to the dark side.</p>
+        `;
+    });
+    // Target #expelled-army
+    const expelled = document.querySelector("#expelled-army");
+    // Render the card to the DOM.
+    expelled.innerHTML = domString;
+}
+
 /*
 ========================================= Filters =========================================
 */
@@ -101,13 +121,13 @@ const expelStudent = () => {
         if (event.target.id.includes("expel")) {
             const [, id] = event.target.id.split("--");
             const index = students.findIndex(event => event.id === Number(id));
-            students.splice(index, 1);
+            let expelledStudent = students.splice(index, 1);
+            expelledArmy.push(expelledStudent);
             renderCards(students);
+            renderExpelledArmy(expelledArmy);
         }
     })
-    // TODO: Figure out how to push student to expelled army array
-    console.log(expelStudent);
-    console.log(expelledArmy);
+    // TODO: Figure out why the student name is undefined.
 };
 
 /*
